@@ -9,10 +9,6 @@ Share your Gleam code to [playground.gleam.run](https://playground.gleam.run) di
 
 ## Installation
 
-### From VS Code Marketplace
-
-Search for "Gleam Park" in the Extensions view
-
 ### Manual Installation
 
 Download the latest `.vsix` file from [Releases](https://github.com/jeffreymorrisondev/gleampark/releases) and install via:
