@@ -1,0 +1,72 @@
+{
+  "name": "gleampark",
+  "displayName": "GleamPark",
+  "description": "Launch Gleam Playground with Highlighted Code",
+  "version": "0.0.1",
+  "publisher": "jeffreymorrisondev",
+  "engines": {
+    "vscode": "^1.70.0"
+  },
+  "keywords": [
+    "gleam",
+    "playground",
+    "share"
+  ],
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onLanguage:gleam"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "gleampark.shareToPlayground",
+        "title": "Share to Playground",
+        "category": "GleamPark"
+      }
+    ],
+    "configuration": {
+      "title": "GleamPark",
+      "properties": {
+        "gleampark.shareMethod": {
+          "type": "string",
+          "default": "browser",
+          "enum": [
+            "browser",
+            "clipboard",
+            "both"
+          ],
+          "enumDescriptions": [
+            "Open playground in browser",
+            "Copy link to clipboard",
+            "Open in browser and copy link"
+          ],
+          "description": "How to share code to the playground"
+        }
+      }
+    }
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "pretest": "npm run compile && npm run lint",
+    "lint": "eslint src",
+    "test": "vscode-test"
+  },
+  "devDependencies": {
+    "@types/mocha": "^10.0.10",
+    "@types/node": "22.x",
+    "@types/vscode": "^1.107.0",
+    "@vscode/test-cli": "^0.0.12",
+    "@vscode/test-electron": "^2.5.2",
+    "eslint": "^9.39.1",
+    "typescript": "^5.9.3",
+    "typescript-eslint": "^8.48.1"
+  },
+  "dependencies": {
+    "lz-string": "^1.5.0"
+  }
+}
