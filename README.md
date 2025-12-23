@@ -7,13 +7,27 @@ Share your Gleam code to [playground.gleam.run](https://playground.gleam.run) di
 - **Quick sharing** - Share code to the Gleam Playground with a single command
 - **Configurable sharing** - Copy link to clipboard, open in browser, or both
 
+## Installation
+
+### From VS Code Marketplace
+
+Search for "Gleam Park" in the Extensions view
+
+### Manual Installation
+
+Download the latest `.vsix` file from [Releases](https://github.com/jeffreymorrisondev/gleampark/releases) and install via:
+
+- VS Code: Extensions view → `...` → Install from VSIX
+- Command line: `code --install-extension gleampark-0.0.1.vsix`
+
 ## Usage
 
 ### Command Palette
 
 1. Open a Gleam file
-2. Open the Command Palette (`Cmd+Shift+P` on macOS or `Ctrl+Shift+P` on Windows/Linux)
-3. Run `GleamPark: Share to Playground`
+2. Highlight the Gleam code you want to share via Gleam Playground
+3. Open the Command Palette (`Cmd+Shift+P` on macOS or `Ctrl+Shift+P` on Windows/Linux)
+4. Run `GleamPark: Share to Playground`
 
 ## Extension Settings
 
