@@ -20,8 +20,8 @@ Share your Gleam code to [playground.gleam.run](https://playground.gleam.run) di
 This extension contributes the following settings:
 
 - `gleampark.shareMethod`: Choose how to share playground links
-  - `both` - Copy to clipboard and open in browser (default)
-  - `browser` - Open link in browser only
+  - `browser` - Open link in browser only (default)
+  - `both` - Copy to clipboard and open in browser
   - `clipboard` - Copy link to clipboard only
 
 ## Requirements
