@@ -2,7 +2,7 @@
   "name": "gleampark",
   "displayName": "GleamPark",
   "description": "Launch Gleam Playground with Highlighted Code",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "publisher": "jeffreymorrisondev",
   "repository": {
     "type": "git",
@@ -29,6 +29,11 @@
         "command": "gleampark.shareToPlayground",
         "title": "Share to Playground",
         "category": "GleamPark"
+      },
+      {
+        "command": "gleampark.decodeFromPlayground",
+        "title": "Decode from Playground",
+        "category": "GleamPark"
       }
     ],
     "configuration": {
@@ -48,6 +53,21 @@
             "Open in browser and copy link"
           ],
           "description": "How to share code to the playground"
+        },
+        "gleampark.pasteMethod": {
+          "type": "string",
+          "default": "newFile",
+          "enum": [
+            "newFile",
+            "append",
+            "ask"
+          ],
+          "enumDescriptions": [
+            "Always open in a new untitled file",
+            "Append to end of active editor",
+            "Ask user each time"
+          ],
+          "description": "How to handle decoded playground code"
         }
       }
     }
